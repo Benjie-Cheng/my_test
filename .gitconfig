@@ -1,0 +1,21 @@
+[user]
+	name = ronghe.cheng
+	email = ronghe.cheng@transsion.com
+[color]
+	ui = auto
+[commit]
+	template = /home/user3/commit.template
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	unstage = reset HEAD
+	last = log -1
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	latest = for-each-ref --sort=-committerdate --format=\"%(committername)@%(refname:short) [%(committerdate:short)] %(contents)\"
+	ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+	hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(red)[%an] %C(blue)%ad\" --topo-order --graph --date=short
+	type = cat-file -t
